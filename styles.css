@@ -1,0 +1,99 @@
+
+/************************** removing default margin and padding ***********************************/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/******************************** all elements are in top container******************************/
+
+.top-container {
+    width: 100%;
+    height: 100%;
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+
+/******************************* flex for making containers in same coloumn *************************************/
+
+.container {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    justify-content: center;
+    align-items: center;
+    margin: 2rem auto;
+    max-width: min-content;
+}
+
+/******************************* flex for making two containers in same row *************************************/
+
+
+.inner-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 3rem;
+}
+
+.content-conatainer {
+    display: flex;
+    flex-direction: column;
+}
+
+.gender-label {
+    align-self: flex-start;
+}
+
+.gender-div {
+    display: flex;
+    gap: 1.5rem;
+}
+
+.male-female-div {
+    display: flex;
+    gap: 1rem;
+}
+
+.coding-languages {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+}
+
+.chechboxes {
+    display: flex;
+    gap: 5px;
+    align-items: center;
+}
+
+.chechboxes-items {
+    display: flex;
+    gap: 5px;
+}
+
+
+/************************************ media query for making website responsive *********************************************/
+
+@media screen and (max-width: 480px) {
+    .container {
+        align-items: flex-start;
+    }
+
+    .inner-container {
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: start;
+    }
+
+    .coding-languages {
+        flex-direction: column;
+    }
+
+    .chechboxes {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+}

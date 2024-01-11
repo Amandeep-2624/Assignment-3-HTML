@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <title>Registration Form</title>
+  </head>
+  <body>
+    <div class="top-container">
+      <form class="container">
+        <div class="inner-container">
+          <div class="content-conatainer">
+            <label for="fname">First Name:</label>
+            <input type="text" name="fname" id="fname" />
+          </div>
+          <div class="content-conatainer">
+            <label for="lname">Last Name:</label>
+            <input type="text" name="lname" id="lname" />
+          </div>
+        </div>
+        <div class="inner-container">
+          <div class="content-conatainer">
+            <label for="email">Email:</label>
+            <input type="email" name="email" id="email" />
+          </div>
+          <div class="content-conatainer">
+            <label for="contact">Contact Number:</label>
+            <input
+              type="number"
+              maxlength="10"
+              minlength="10"
+              name="contact"
+              id="contact"
+            />
+          </div>
+        </div>
+        <div class="inner-container">
+          <div class="content-conatainer">
+            <label for="username">Username:</label>
+            <input type="text" name="username" id="username" />
+          </div>
+          <div class="content-conatainer">
+            <label for="password">Password:</label>
+            <input
+              type="password"
+              minlength="8"
+              name="password"
+              id="password"
+            />
+          </div>
+        </div>
+        <div class="inner-container">
+          <div class="content-conatainer">
+            <label for="address">Address:</label>
+            <textarea name="address" id="address" cols="21" rows="2"></textarea>
+          </div>
+          <div class="content-conatainer">
+            <div class="gender-label">Gender:</div>
+            <div class="gender-div">
+              <div class="male-female-div">
+                <input type="radio" name="male" id="male" value="male" />
+                <label for="male">Male</label>
+              </div>
+              <div class="male-female-div">
+                <input name="female" type="radio" id="female" value="female" />
+                <label for="female">Female</label>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="inner-container">
+          <div class="content-container">
+            <label for="qualification">Qualification:</label>
+            <select name="qualification" id="qualification">
+              <option value="--select--">--select--</option>
+              <option value="postgraduation">Post Graduation</option>
+              <option value="graduation">Graduation</option>
+              <option value="high-school">High School</option>
+              <option value="primary-school">Primary School</option>
+            </select>
+          </div>
+          <div class="content-container">
+            <label for="experience">Experience</label>
+            <select name="experience" id="experience">
+              <option value="--select--">--select--</option>
+              <option value="less-than-1">Less Than 1</option>
+              <option value="1-2">1-2</option>
+              <option value="3-5">3-5</option>
+              <option value="more-than-5">More Than 5</option>
+            </select>
+          </div>
+        </div>
+        <div class="inner-container">
+          <div class="coding-languages">
+            <p>Coding Languages:</p>
+            <div class="chechboxes">
+              <div class="chechboxes-items">
+                <input type="checkbox" value="C/C++" name="c++" id="c++" />
+                <label for="">C/C++</label>
+              </div>
+              <div class="chechboxes-items">
+                <input type="checkbox" value="Java" name="java" id="java" />
+                <label for="">Java</label>
+              </div>
+              <div class="chechboxes-items">
+                <input type="checkbox" value="C#" name="C#" id="C#" />
+                <label for="">C#</label>
+              </div>
+              <div class="chechboxes-items">
+                <input type="checkbox" value="PHP" name="PHP" id="PHP" />
+                <label for="">PHP</label>
+              </div>
+              <div class="chechboxes-items">
+                <input
+                  type="checkbox"
+                  value="Python"
+                  name="Python"
+                  id="Python"
+                />
+                <label for="">Python</label>
+              </div>
+            </div>
+          </div>
+        </div>
+        <button>Submit</button>
+      </form>
+    </div>
+  </body>
+</html>
